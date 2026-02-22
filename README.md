@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://github.com/user-attachments/assets/9d509529-b2fd-4965-8601-07099b917cdf" width="120px" alt="micon">
+<img src="https://github.com/user-attachments/assets/5d3f79ba-2f77-4d42-9f83-8cfd660fedf4" width="120px" alt="micon">
 </p>
 
 # Micon

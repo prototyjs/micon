@@ -44,6 +44,13 @@ iconNames.forEach(name => {
 				'removeDimensions',
 				'convertStyleToAttrs',
 				{
+					name: 'removeAttributesBySelector',
+					params: {
+						selector: 'svg *',
+						attributes: ['stroke-width']
+					}
+				},
+				{
 					name: 'addAttributesToSVGElement',
 					params: {
 						attributes: [{ fill: 'none' }, { stroke: 'currentColor' }]
@@ -61,7 +68,7 @@ iconNames.forEach(name => {
 
 		const content = `
       const svg = \`${optimizedSvg.replace(/`/g, '\\`').replace(/\$/g, '\\$')}\`
-      const styles = \`:host { display: inline-flex; width: var(--micon-size, 24px); height: var(--micon-size, 24px); color: var(--micon-color, currentColor); } svg { width: 100%; height: 100%; stroke-width: var(--micon-stroke, 2px); }\`
+      const styles = \`:host { display: inline-flex; width: var(--micon-size, 24px); height: var(--micon-size, 24px); color: var(--micon-color, currentColor); } svg { width: 100%; height: 100%; fill: none; stroke: currentColor; stroke-width: var(--micon-stroke, 6px); }\`
 
       export class ${className} extends HTMLElement {
         connectedCallback() {

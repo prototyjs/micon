@@ -1,0 +1,33 @@
+{
+  "name": "micon",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/prototyjs/micon#readme",
+  "bugs": {
+    "url": "https://github.com/prototyjs/micon/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prototyjs/micon.git"
+  },
+  "license": "MIT",
+  "author": "Sasha Kosyak",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "style": "./dist/base.css",
+  "exports": {
+    ".": "./dist/index.js",
+    "./*": "./dist/*.js"
+  },
+  "scripts": {
+    "build": "vite build",
+    "example:client": "npx vite examples/client-spa",
+    "example:server": "node examples/server-ssr/server.js"
+  },
+  "devDependencies": {
+    "svgo": "^4.0.0",
+    "terser": "^5.46.0",
+    "vite": "^7.3.1"
+  }
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Micon | Client-side Demo</title>
+
+    <!-- 1. Load base styles for global variables -->
+    <link rel="stylesheet" href="../../dist/base.css">
+
+    <style>
+        :root {
+            --micon-size: 20px;
+            --micon-color: #2c3e50;
+        }
+
+        body {
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            padding: 50px;
+        }
+
+        /* Custom styling via class */
+        .featured-icon {
+            --micon-size: 30px;
+            --micon-color: #3498db;
+            --micon-stroke: 1.5px;
+        }
+    </style>
+</head>
+<body>
+<h1>Micon SPA Example</h1>
+
+<!-- Default icon (uses :root variables) -->
+<micon-heart></micon-heart>
+
+<!-- Styled via CSS class -->
+<micon-settings class="featured-icon"></micon-settings>
+
+
+<!-- 2. Import icons (automatic registration) -->
+<script type="module">
+	import '../../dist/heart.js'
+	import '../../dist/settings.js'
+</script>
+</body>
+</html>

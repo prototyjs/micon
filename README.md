@@ -1,7 +1,3 @@
-<p align="center">
-<img src="https://github.com/user-attachments/assets/b03f7027-a93e-41eb-a8c3-e2dfe6855697" width="120px" alt="micon">
-</p>
-
 # Micon
 
 A high-performance, lightweight icon library built with **Web Components** and **Declarative Shadow DOM (DSD)**. 
